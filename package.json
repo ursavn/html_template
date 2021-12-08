@@ -1,0 +1,41 @@
+{
+  "name": "demo",
+  "version": "1.0.0",
+  "description": "HTML Sample",
+  "main": "./src/index.js",
+  "scripts": {
+    "start": "webpack serve --mode=development",
+    "build": "webpack --mode=production",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ursavn/html_template.git"
+  },
+  "keywords": [
+    "HTML"
+  ],
+  "author": "hieu.do@ursa.vn",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ursavn/html_template/issues"
+  },
+  "homepage": "https://github.com/ursavn/html_template#readme",
+  "devDependencies": {
+    "@babel/core": "^7.16.0",
+    "@babel/plugin-transform-runtime": "^7.16.4",
+    "@babel/preset-env": "^7.16.4",
+    "@babel/runtime": "^7.16.3",
+    "babel-loader": "^8.2.3",
+    "mini-css-extract-plugin": "^2.4.5",
+    "postcss-preset-env": "^7.0.1",
+    "process": "^0.11.10",
+    "webpack": "^5.65.0",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.6.0"
+  },
+  "dependencies": {
+    "cssnano": "^5.0.12",
+    "path": "^0.12.7"
+  }
+}
