@@ -1,20 +1,27 @@
 :root {
-  --txt-color: #3d3d3d;
+  --txt-color: #2e2e2e;
   --txt-color2: #ffffff;
-  --txt-color3: #a3a3a3;
+  --txt-color3: #6b6b6b;
   --txt-color4: #e24c4b;
   --txt-color5: #32bea6;
 
-  --border-color: #3d3d3d;
+  --border-color: #323232;
 
   --bg-color: #ffffff;
   --bg-color2: #f0f1f5;
   --bg-color3: #6b6b6b;
 }
+@font-face {
+  font-family: "YuGothic";
+  src: url('../fonts/yugothib.ttf') format('ttf');
+  font-weight: 700;
+}
 body {
   color: var(--txt-color);
   background: var(--bg-color2);
   font-size: 1em;
+  font-family: "YuGothic";
+  font-weight: 700;
 }
 a {
   text-decoration: none;
@@ -87,23 +94,22 @@ img {
   content: "";
   height: 100%;
   width: 1px;
-  background: var(--txt-color);
+  background: var(--border-color);
   position: absolute;
   right: 0;
   top: 0;
 }
 .list-used-coupons .coupons .coupon-detail {
-  background: var(--bg-color);
-  border-radius: 20px;
-  padding: 20px 20px 0;
   margin-bottom: 40px;
 }
 .list-used-coupons .coupons .coupon-detail .selected {
   font-size: 1.25em;
   color: var(--txt-color5);
-  margin-bottom: 20px;
+  padding: 20px;
   display: flex;
   align-items: center;
+  background: var(--bg-color);
+  border-radius: 15px 15px 0 0;
 }
 .list-used-coupons .coupons .coupon-detail .selected i {
   font-size: 30px;
@@ -113,6 +119,10 @@ img {
 .list-used-coupons .coupons .coupon-detail .pay-for {
   display: flex;
   align-items: center;
+  border-radius: 0 0 15px 15px;
+  padding: 0 20px 20px;
+  overflow: hidden;
+  background: var(--bg-color);
 }
 .list-used-coupons .coupons .coupon-detail .pay-for .col-left {
   max-width: 24%;
@@ -124,6 +134,10 @@ img {
 }
 .list-used-coupons .coupons .coupon-detail .pay-for .col-left .product-name {
   line-height: 1.5;
+  margin: 0;
+  font-size: 1.25em;
+}
+.list-used-coupons .coupons .coupon-detail .pay-for .col-left .discount {
   margin: 0 0 10px 0;
   font-size: 1.25em;
 }
@@ -139,37 +153,25 @@ img {
 }
 /* footer coupon */
 .list-used-coupons .coupons .coupon-detail .info-extra {
-  margin: 15px -20px 0;
   padding: 20px;
-  border-top: 2px dotted var(--border-color);
   position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-weight: 500;
+  font-size: 1.25em;
+  border-radius: 15px;
+  background: var(--bg-color);
 }
-.list-used-coupons .coupons .coupon-detail .info-extra:after,
 .list-used-coupons .coupons .coupon-detail .info-extra:before {
   content: "";
   display: block;
-  width: 0;
-  height: 0;
-  border-style: solid;
+  border-top: 2px dotted var(--border-color);
   position: absolute;
-  top: -10px;
-}
-.list-used-coupons .coupons .coupon-detail .info-extra:before {
-  border-width: 9px 0 9px 9px;
-  border-color: transparent transparent transparent var(--bg-color2);
-  left: 0;
-}
-.list-used-coupons .coupons .coupon-detail .info-extra:after {
-  border-width: 9px 9px 9px 0;
-  border-color: transparent var(--bg-color2) transparent transparent;
-  right: 0;
+  top: -1px;
+  left: 10px;
+  right: 10px;
 }
 .list-used-coupons .coupons .coupon-detail .info-extra .txt-expiration {
-  font-size: 1.25em;
   position: relative;
   padding-right: 10px;
   margin-right: 10px;
@@ -178,7 +180,7 @@ img {
   content: "";
   height: 100%;
   width: 1px;
-  background: var(--bg-color2);
+  background: var(--border-color);
   position: absolute;
   right: 0;
   top: 0;

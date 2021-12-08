@@ -39,15 +39,15 @@ module.exports = {
                 ],
             },
             {
-                // Thiết lập lưu các ảnh sử dụng bởi CSS
-                // lưu dưới đường dẫn images cùng file site.css
+                // Set to save images using CSS
+                // save with the same image path as site.css
                 test: /\.(png|jpe?g|gif)$/,
                 use: [
                     {
                         loader: 'file-loader',
                         options: {
                             name: '[name].[ext]',
-                            // Image sử dụng bởi CSS lưu tại
+                            // Image used by CSS stored at
                             publicPath: './assets/images',
                             emitFile: false
                         }

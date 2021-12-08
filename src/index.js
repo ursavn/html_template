@@ -6,14 +6,16 @@ const generalOfPage = {
   txtExpiration: "利用期間",
   txtConcat: "~",
   txtUntil: "まで",
+  txtDiscount: "引き",
 }
 const listUsedCoupon = [
   {
     date: "20XX年X月X日",
     coupons: [
       {
-        productImage: "./assets/img/img-product.png",
-        productName: "外国産バナナ10円引き",
+        productImage: "./assets/images/img-product.png",
+        productName: "外国産バナナ",
+        discount : "10円",
         conditionLimit: "1家族1点限り",
         couponStatus: "利用済み",
         mfgDate: "2021年12月1日",
@@ -21,13 +23,14 @@ const listUsedCoupon = [
         combineStatus: "併用可",
       },
       {
-        productImage: "./assets/img/img-product.png",
-        productName: "外国産バナナ10円引き",
+        productImage: "./assets/images/img-product.png",
+        productName: "外国産バナナ",
+        discount : "10円",
         conditionLimit: "1家族1点限り",
         couponStatus: "利用済み",
         mfgDate: "2021年12月1日",
         expDate: "2022年1月◯日",
-        combineStatus: "併用可",
+        combineStatus: "併⽤不可",
       },
     ]
   },
@@ -35,8 +38,9 @@ const listUsedCoupon = [
     date: "20XX年X月X日",
     coupons: [
       {
-        productImage: "./assets/img/img-product.png",
-        productName: "外国産バナナ10円引き",
+        productImage: "./assets/images/img-product.png",
+        productName: "外国産バナナ",
+        discount : "10円",
         conditionLimit: "1家族1点限り",
         couponStatus: "利用済み",
         mfgDate: "2021年12月1日",
@@ -57,6 +61,7 @@ function htmlCoupon(value, index, array) {
           htmlUsedCoupon +='<img src="' + value.productImage + '" alt="image product"/>';
         htmlUsedCoupon +='</div>';
         htmlUsedCoupon +='<h4 class="product-name">' + value.productName + '</h4>';
+        htmlUsedCoupon +='<h4 class="discount">' + value.discount + generalOfPage.txtDiscount + '</h4>';
         htmlUsedCoupon +='<span class="condition-limit">' + value.conditionLimit + '</span>';
       htmlUsedCoupon +='</div>';
 
