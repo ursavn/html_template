@@ -181,12 +181,12 @@ img {
 }
 .list-used-coupons .coupons .coupon-detail .info-extra .txt-expiration:after {
   content: "";
-  height: 100%;
   width: 1px;
   background: var(--border-color);
   position: absolute;
   right: 0;
-  top: 0;
+  top: 2px;
+  bottom: 2px;
 }
 /* responsive */
 @media(max-width: 767px) {
