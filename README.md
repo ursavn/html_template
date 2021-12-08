@@ -1,19 +1,21 @@
-# Install all default packages using NPM
+# HTML Template
+
+## Install all default packages using NPM
 ```
 npm install --save
 ```
 
-# Install new package
+## Install new package
 ```
 npm install --save <package-name>
 ```
 
-# JS Build
+## JS Build
 ```
 npm run build
 ```
 
-# JS Run Development Mode
+## JS Run Development Mode
 ```
 npm run start
 ```
