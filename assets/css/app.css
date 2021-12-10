@@ -29,6 +29,9 @@ a {
 img {
   max-width: 100%;
 }
+.center {
+  text-align: center;
+}
 .wrapper-content {
   /* max-width: 90%; */
   /* margin: 30px auto; */
